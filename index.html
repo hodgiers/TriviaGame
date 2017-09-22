@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trivia Game</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ <!--   <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+</head>
+
+<body>
+
+<!-- BEGIN: jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- End: jQuery-->
+
+    <div class="container-fluid">
+        <!-- Big box for title via jumbotron -->
+
+        <div class='jumbotron' style='background-color: blue; color: white;'>
+            <div class='container'>
+                <h1 class='text-center'><strong>Trivia Game</strong></h1>
+            </div>
+        </div>
+    </div>
+<!-- END THIS ROW-->
+
+<!-- BEGIN: Start Game Button-->
+    <div class='row'>
+        <div class='col-md-1'>         
+        <button id= 'start' type="button" class="btn btn-primary btn-lg">Start</button>
+        </div>
+    </div>
+<!-- END THIS ROW-->
+
+<!-- BEGIN: Time Remaining -->
+    <div class='row'>
+        <div class='col-md-4'>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2 class="panel-title text-center">Time Remaining</h2>
+                </div>
+                <div class="panel-body" id='status'>
+                    <h3></h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- END THIS ROW-->
+
+<!-- Main Row for all the content -->
+    <div class='row'>
+
+<!-- Container for Instructions-->
+        <div class='col-md-6'>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2 class="panel-title text-center">Quiz</h2>
+                </div>
+
+                <div class="panel-body" id='quiz-area'>
+                    <p>Test your cybersecurity knowledge</p>
+                </div>
+            </div>          
+        </div>
+    </div>
+<!-- END THIS SECTION-->
+
+<!-- BEGIN: Done Button -->
+    <div class='row'>
+        <div class='col-lg-3'> 
+        <button id= 'done' type="button" class="btn btn-primary btn-lg">Done</button>
+        </div>
+    </div>
+<!-- END THIS ROW-->
+
+<!-- BEGIN: Results -->
+    <div class='row'>
+        <div class='col-md-4'>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2 class="panel-title text-center">Results</h2>
+                </div>
+                <div class="panel-body" id='results'>
+                    <h3></h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- END THIS ROW-->
+
+
+<!-- BEGIN: Javscript -->
+<script src="assets/javascript/app.js"></script>
+
+</html>
